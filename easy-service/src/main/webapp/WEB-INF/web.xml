@@ -7,14 +7,17 @@
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
-   <filter>
-    <display-name>FilterAutenticator</display-name>
-    <filter-name>FilterAutenticator</filter-name>
-    <filter-class>filter.FilterAutenticator</filter-class>
+  <filter>
+    <display-name>FilterAutenticacao</display-name>
+    <filter-name>FilterAutenticacao</filter-name>
+    <filter-class>filter.FilterAutenticacao</filter-class>
   </filter>
   <filter-mapping>
-    <filter-name>FilterAutenticator</filter-name>
-    <url-pattern>/FilterAutenticator</url-pattern>
+    <filter-name>FilterAutenticacao</filter-name>
+    <url-pattern>/FilterAutenticacao</url-pattern>
   </filter-mapping>
+  
+  
+   
 
 </web-app>

@@ -19,9 +19,9 @@ public class DaoLoginRepository  implements Serializable{
 	
 	/*metodo para validar nosso login*/
 	public boolean validarAutenticacao(ModelPessoa modelPessoa) throws Exception{
-		String sql =  "select * from PESSOAS where upper(login) =  upper(?) and upper(senha) = upper(?)" ;
+		String sql =  "select * from PESSOAS where upper(EMAIL) =  upper(?) and upper(SENHA) = upper(?)" ;
 		PreparedStatement preparedStatement =  connection.prepareStatement(sql);
-		preparedStatement.setString(1, modelPessoa.getLogin());
+		preparedStatement.setString(1, modelPessoa.getEmail());
 		preparedStatement.setString(2, modelPessoa.getSenha());
 		ResultSet resultSet = preparedStatement.executeQuery();
 		if(resultSet.next()) {

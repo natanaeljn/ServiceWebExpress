@@ -21,8 +21,9 @@ public class SingleConnection {
 				Class.forName("com.mysql.cj.jdbc.Driver");
 				connection= DriverManager.getConnection(
 						"jdbc:mysql://aws.connect.psdb.cloud/ecm_01?sslMode=VERIFY_IDENTITY",
-						"nsglnb2rejz2r008xt0d",
-						"pscale_pw_6sNWzPRj5W1mdg3DLzB4jwXUnZBpuWnmZo4k42pRASm"
+						"kbjq6d9rbbuys9q7hm3d",
+						"pscale_pw_ESZOgmCPCPmQYNksuy1oPEetfgeoHfHEkiclqdCYCjl"
+						
 						
 						);
 				connection.setAutoCommit(false);

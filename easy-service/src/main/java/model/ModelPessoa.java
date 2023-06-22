@@ -32,16 +32,16 @@ public class ModelPessoa  implements Serializable{
 	
 	
 	/*login*/
-	private String login;
+	private String email;
 	private String senha;
 	private boolean isPrestador;
 	
 	
 	
 	
-	public ModelPessoa(String login, String senha) {
+	public ModelPessoa(String email, String senha) {
 		super();
-		this.login = login;
+		this.email = email;
 		this.senha = senha;
 	}
 	public ModelPessoa() {
@@ -57,11 +57,11 @@ public class ModelPessoa  implements Serializable{
 		}
 		return id == null;
 	}
-	public String getLogin() {
-		return login;
+	public String getEmail() {
+		return email;
 	}
-	public void setLogin(String login) {
-		this.login = login;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	public String getSenha() {
 		return senha;
